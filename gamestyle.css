@@ -1,43 +1,65 @@
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #f9f9f9;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #1d1d1f;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  z-index: 10000;
+  position:fixed;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+nav {
+  margin-top: 10px;
 }
 
 nav a {
+  margin: 0 15px;
+  color: #0071e3;
   text-decoration: none;
-  color: black;
   font-weight: 500;
 }
 
-nav a.active,
 nav a:hover {
-  color: #007aff;
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #888;
 }
 /* Cover Image and Play Button */
 .cover {
