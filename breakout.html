@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breakout</title>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biografia.html">Biografia</a></li>
+        <li><a href="carriera.html">Carriera</a></li>
+        <li><a href="breakout.html" class="active">Breakout</a></li>
+      </ul>
+    </nav>
+  <link rel="stylesheet" href="gamestyle.css" />
+</head>
+<body>
+
+  <!-- Cover Section -->
+  <section class="cover">
+    <img src="images/breakout-cover.jpg" alt="Breakout Game Cover" class="cover-image" />
+    <button class="play-button" id="startGame">▶ Play</button>
+  </section>
+
+  <!-- Game Overlay -->
+  <div class="game-overlay" id="gameOverlay">
+    <img src="images/close-icon.png" alt="Close" class="close-button" id="closeGame" />
+
+    <div class="score-panel">
+      <p>Punti: <span id="score">0</span></p>
+    </div>
+
+    <canvas id="breakoutCanvas" width="480" height="320"></canvas>
+
+    <div class="controls">
+      <button id="leftBtn">◀</button>
+      <button id="rightBtn">▶</button>
+    </div>
+
+    <div class="game-over" id="gameOver">
+      <p>🎮 GAME OVER</p>
+      <button id="restartGame">Riprova</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
