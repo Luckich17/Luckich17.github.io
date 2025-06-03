@@ -26,6 +26,7 @@ body {
   max-width: 960px;
   margin: auto;
   padding: 20px;
+  padding-top: 100px; /* Spazio per header fisso */
 }
 
 header {
